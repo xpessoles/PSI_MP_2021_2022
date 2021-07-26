@@ -1,0 +1,41 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+\input{../../Style/packages}
+\input{../../Style/new_style}
+\input{../../Style/macros_SII}
+\input{../../Style/environment}
+
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{../../Style}
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+\graphicspath{{\repStyle/png/}{../../PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/images}}
+
+\setlength{\columnseprule}{.1pt}
+
+%% MODELISER
+% Page de garde
+
+\input{../../Style/Cycle_01_Entete}
+\input{../../PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/Cy_01_Ch_01_Generalites_Cours.tex}
+
+
+\end{document}
+
+
+
