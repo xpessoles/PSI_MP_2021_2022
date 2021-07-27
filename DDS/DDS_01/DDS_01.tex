@@ -1,0 +1,162 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+
+\newcommand{\repRel}{../../..}
+\newcommand{\repStyle}{\repRel/Style}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_pedagogique}
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+
+
+
+
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+\graphicspath{{\repStyle/png/}}
+
+
+
+\setlength{\columnseprule}{.1pt}
+
+%% MODELISER
+% Page de garde
+%\chapter{Modéliser}
+\input{\repRel/Style/Entete_Modeliser}
+%\input{../../Style/pagegarde_livret_exos}
+%\vspace{2cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\begin{multicols}{2}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_04_ModeleConnaissance}
+\setcounter{numexo}{217}
+\renewcommand{\td}{51_MCC}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_07_ModelisationSchemaBlocs}
+\setcounter{numexo}{216}
+\renewcommand{\td}{51_MCC}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_03_PerformancesSLCI}
+\setcounter{numexo}{215}
+\renewcommand{\td}{501_Divers}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\setcounter{numexo}{214}
+\renewcommand{\td}{01_T}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\setcounter{numexo}{213}
+\renewcommand{\td}{02_R}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_12_ModeliserSchemaCinematiques}
+\setcounter{numexo}{212}
+\renewcommand{\td}{14_Sympact}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_13_ModeliserCinermatique}
+\setcounter{numexo}{211}
+\renewcommand{\td}{01_T}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_13_ModeliserCinermatique}
+\setcounter{numexo}{210}
+\renewcommand{\td}{02_R}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_13_ModeliserCinermatique}
+\setcounter{numexo}{209}
+\renewcommand{\td}{14_Sympact}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C1_ProposerDemarche/C1_05_ProposerDemarcheActionMecaLoiMvt_PFS}
+\setcounter{numexo}{211}
+\renewcommand{\td}{01_T}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C1_ProposerDemarche/C1_05_ProposerDemarcheActionMecaLoiMvt_PFS}
+\setcounter{numexo}{210}
+\renewcommand{\td}{02_R}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C1_ProposerDemarche/C1_05_ProposerDemarcheActionMecaLoiMvt_PFS}
+\setcounter{numexo}{209}
+\renewcommand{\td}{14_Sympact}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_DeterminerLoisES}
+\setcounter{numexo}{208}
+\renewcommand{\td}{14_Sympact}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_07_PFS}
+\setcounter{numexo}{207}
+\renewcommand{\td}{14_Sympact}
+\graphicspath{{\repStyle/png/}{\repExo/\td/images/}}
+\input{\repExo/\td/\td.tex}
+
+\end{multicols}
+\end{document}
+218 jours
+
+Schéma blocs
+Schéma blocs
+Calcul de FT
+Calcul de FT
+Calcul de précision
+Calcul de précision
+Diagramme de Bode
+Identificaiton Bode
+Identification temporelle
+Schéma cinématique
+Schéma cinématique
+Chaine ouverte Géo
+Chaine fermée Géo
+Transmission 
+Transmission
+Capteur
+PFS
+PFS
+PFD
+PFD
+
+
+
