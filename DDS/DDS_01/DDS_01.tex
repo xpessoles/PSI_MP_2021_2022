@@ -42,17 +42,30 @@
 % Page de garde
 %\chapter{Modéliser}
 \input{\repRel/Style/Entete_Modeliser}
-%\input{../../Style/pagegarde_livret_exos}
+
 %\vspace{2cm}
+
+
+\def\xxpartie{}
+\def\xxnumpartie{}
+\def\xxchapitre{}
+\def\xxnumchapitre{}
+\def\xxactivite{DDS 1}
+\def\xxtitreexo{Les ptits devoirs du soir}
+\def\xxsourceexo{Xavier Pessoles}
+
+\input{\repRel/Style/pagegarde_TD}
+
 \pagestyle{fancy}
 \thispagestyle{plain}
+
+\vspace{4.5cm}
 
 \begin{multicols}{2}
 \input{DDS_01_liste}
 \end{multicols}
 
 \newpage
-
 \proftrue
 \input{DDS_01_liste}
 \end{document}
