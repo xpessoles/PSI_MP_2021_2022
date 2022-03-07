@@ -1,0 +1,144 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+\newcommand{\repRel}{../../..}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_Pedagogique}
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{\repRel/Style}
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+\graphicspath{{\repStyle/png/}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/images/}}
+
+%\setlength{\columnseprule}{.1pt}
+
+%% MODELISER
+% Page de garde
+
+\livrettrue
+\input{\repStyle/Revisions_Entete}
+
+
+\normaltrue
+\newpage
+\proffalse \colletrue
+
+
+
+
+
+%%%% Paramétrage du TD %%%%
+\def\xxactivite{ Révisions} % \normalsize \vspace{-.4cm}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+
+\def\xxnumchapitre{}%Chapitre 1 \vspace{.2cm}}
+\def\xxchapitre{}%\hspace{.12cm} Approche énergétique}
+
+\def\xxcompetences{}%
+%\vspace{-.5cm}
+%\footnotesize{
+%\textsl{%
+%\textbf{Savoirs et compétences :}\\
+%\vspace{-.2cm}
+%\begin{itemize}[label=\ding{112},font=\color{ocre}] 
+%\item Mod2.C18.SF1 : Déterminer l’énergie cinétique d’un solide, ou d’un ensemble de solides, dans son mouvement par rapport à un autre solide.
+%\item Res1.C1.SF1 : Proposer une démarche permettant la détermination de la loi de mouvement.
+%%\item Mod1.C5.SF2 : Déterminer la puissance des actions mécaniques extérieures à un solide ou à un ensemble de solides, dans son mouvement rapport à un autre solide.
+%%\item Mod1.C5.SF3 : Déterminer la puissance des actions mécaniques intérieures à un ensemble de solides.
+%\end{itemize}}}}
+
+\def\xxtitreexo{Trains épicycloïdaux \& Lois de Coulomb}
+\def\xxsourceexo{}%\hspace{.2cm} \footnotesize{X -- ENS -- PSI -- 2012}}
+
+\def\xxfigures{}%
+%\includegraphics[width=.57\linewidth]{fig_00}
+%}%figues de la page de garde
+
+
+\input{\repRel/Style/pagegarde_TD}
+\setcounter{numques}{0}
+
+\setlength{\columnseprule}{.1pt}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+\vspace{5.2cm}
+
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{exo}{0}
+
+\ifprof
+%\begin{multicols}{2}
+\else
+\begin{multicols}{2}
+\fi
+
+\renewcommand{\repExo}{28_TrainEpi}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{29_TrainEpi}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{30_TrainEpi}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+
+\renewcommand{\repExo}{532_MAM_Frottement_Cylindre}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Frottement/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Frottement/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{533_MAM_Frottement_Cylindre}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Frottement/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/B2_ProposerModele/B2_14_ModeliserAction_Frottement/\repExo/\repExo.tex}
+
+
+
+\ifprof
+%\end{multicols}%
+\else
+\end{multicols}%
+\fi
+
+
+
+
+
+
+
+\end{document}
+
+
+
