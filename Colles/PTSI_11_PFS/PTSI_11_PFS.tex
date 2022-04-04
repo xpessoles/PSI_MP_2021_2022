@@ -1,0 +1,105 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+    
+\newcommand{\repRel}{../../..}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_Pedagogique}
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{\repRel/Style}
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+\def\xxnumchapitre{}
+
+\graphicspath{{\repStyle/png/}{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/TD_01_Capsuleuse/images/}}
+
+%\setlength{\columnseprule}{.1pt}
+
+%% MODELISER
+% Page de garde
+
+\livrettrue
+\input{\repStyle/Cycle_05_Entete}
+
+\begin{multicols}{2}
+\normaltrue \proffalse \colletrue
+\renewcommand{\repExo}{TD_01_Capsuleuse}
+\graphicspath{{\repStyle/png/}{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/\repExo/images/}}
+\input{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{28_TrainEpi}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{32_Broyeur}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+\newpage
+\renewcommand{\repExo}{TD_02_RoulementBilles}
+\graphicspath{{\repStyle/png/}{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/\repExo/images/}}
+\input{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{27_TrainEpi}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+
+\renewcommand{\repExo}{31_Redex}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+
+\newpage
+\renewcommand{\repExo}{TD_03_GlissiereBilles}
+\graphicspath{{\repStyle/png/}{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/\repExo/images/}}
+\input{\repRel/Sup_02_ModelisationCinematique/ModelisationContactPonctuel/\repExo/\repExo.tex}
+
+
+\renewcommand{\repExo}{29_TrainEpi}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{33_Centrifugeuse}
+\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+
+%
+%\newpage
+%\renewcommand{\repExo}{30_TrainEpi}
+%\graphicspath{{\repStyle/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/images/}}
+%\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_06_Transmetteurs/\repExo/\repExo.tex}
+%
+%\newpage
+%
+%\newpage
+%\newpage
+
+\end{multicols}
+
+\end{document}
+
+
+
